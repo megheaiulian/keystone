@@ -68,7 +68,7 @@
     "react-addons-css-transition-group": "^0.14.1",
     "react-alt-text": "^1.1.0",
     "react-color": "^1.2.1",
-    "react-day-picker": "^1.0.10",
+    "react-day-picker": "git+https://github.com/megheaiulian/react-day-picker.git",
     "react-dom": "^0.14.1",
     "react-select": "^1.0.0-beta5",
     "scmp": "^1.0.0",

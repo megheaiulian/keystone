@@ -17,8 +17,9 @@ var TextColumn = React.createClass({
 	render () {
 		let value = this.getValue();
 		let empty = !value && this.props.linkTo ? true : false;
+		let style = (this.props.col.path == 'status' && value == 'unsafe'):{color:red}:{};
 		return (
-			<ItemsTableCell>
+			<ItemsTableCell style={style}>
 				<ItemsTableValue href={this.props.linkTo} empty={empty} padded interior field={this.props.col.type}>
 					{value}
 				</ItemsTableValue>

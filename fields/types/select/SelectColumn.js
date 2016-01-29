@@ -15,7 +15,7 @@ var SelectColumn = React.createClass({
 		return option ? option.label : null;
 	},
 	render () {
-		let style = (this.props.col.path == 'status' && this.props.data.fields[this.props.col.path] == 'unsafe')?{color:red}:{};
+		let style = (this.props.col.path == 'status' && this.props.data.fields[this.props.col.path] == 'unsafe')?{color:'red'}:{};
 		return (
 			<ItemsTableCell style={style}>
 				<ItemsTableValue field={this.props.col.type}>

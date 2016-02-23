@@ -15,8 +15,11 @@ var SelectColumn = React.createClass({
 		return option ? option.label : null;
 	},
 	render () {
+		let path  = this.props.col.path;
+		let value = this.props.data.fields[this.props.col.path];
+		let style = (path == 'status' && value == 'unsafe') || (path == 'replaceStatus' && value == 'manual') ? {color : 'red'} : {};
 		return (
-			<ItemsTableCell>
+			<ItemsTableCell style={style}>
 				<ItemsTableValue field={this.props.col.type}>
 					{this.renderValue()}
 				</ItemsTableValue>
